@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Defines a function wrapper for HTML Purifier for quick use.
