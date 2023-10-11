@@ -8,14 +8,10 @@ could implement an HTML Purifier plugin.  This forum thread
 in the fruition of this plugin that davidm says, "is on top of my favorite
 list."  HTML Purifier goes great with WYSIWYG editors!
 
-
-
 1. Credits
 
 PaulGregory wrote the overall structure of the code.  I added the
 slashes hack.
-
-
 
 2. Install
 
@@ -55,8 +51,6 @@ if ($e->name == 'OnBeforeDocFormSave') {
 Then navigate to the System Events tab and check "OnBeforeDocFormSave".
 Save the plugin.  HTML Purifier now is integrated!
 
-
-
 3. Making sure it works
 
 You can test HTML Purifier by deliberately putting in crappy HTML and seeing
@@ -70,8 +64,6 @@ whether or not it gets fixed.  A better way is to put in something like this:
 
 (lang to xml:lang synchronization is one of the many features HTML Purifier
 has).
-
-
 
 4. Caveat Emptor
 
@@ -88,14 +80,10 @@ $config = HTMLPurifier_Config::createDefault();
 $config->set('Core', 'Encoding', 'ISO-8859-1'); // or whatever encoding
 $purifier = new HTMLPurifier($config);
 
-
-
 5. Known Bugs
 
 'rn' characters sometimes mysteriously appear after purification. We are
 currently investigating this issue. See: <http://htmlpurifier.org/phorum/read.php?3,1866>
-
-
 
 6. See Also
 
